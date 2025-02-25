@@ -1,104 +1,89 @@
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: #111;
-}
-
-/* Navbar Styles */
-.navbar {
-  background-color: #fff;
-  padding: 1rem;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navbar li {
-  margin-left: 3%;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #000;
-}
-
-.navbar a.active {
-  border-bottom: 2px solid #111; /* Highlight active page */
-  font-weight: bold; /* Optional bold for active link */
-}
-
-/* Content Wrapper */
-.content {
-  max-width: 1100px;
-  margin: auto;
-  padding: 2rem;
-}
-
-/* Intro Section (Index Page) */
-.intro h1 {
-  font-size: 4rem;
-  font-weight: bold;
-}
-
-.intro p {
-  margin-top: 1rem;
-}
-
-/* Project Preview Section (Index Page) */
-.project-preview {
-  margin-top: 3rem;
-}
-
-.project-preview h2 {
-  font-size: 1.5rem;
-}
-
-.project-preview p {
-  margin-top: .5rem;
-}
-
-.project-preview .btn {
-  display: inline-block;
-  margin-top: .5rem;
-  padding: .5rem .75rem;
-  background-color: #111; /* Black button */
-  color: #fff; /* White text */
-  border: none;
-  cursor: pointer;
-}
-
-.project-preview .btn:hover {
-  background-color: #333; /* Darker hover effect */
-}
-
-.project-preview .project-image {
-  margin-top: .75rem;
-}
-
-/* Skills Section (Projects Page) */
-.skills {
-  margin-top: 3rem;
-  font-size: 1.2rem; /* Slightly larger text */
-  line-height: 1.8; /* Better readability */
-  color: #fff; /* White text */
-  background-color: #000; /* Black background */
-  padding: 2rem; /* Space inside the section */
-}
-
-.skills p {
-  text-align: center; /* Center align the paragraph */
-}
-
-.skills .highlight {
-  color: #f7c948; /* Yellow highlight for key terms */
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #fff;
+    padding: 1rem;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .navbar li {
+    margin-left: 3%;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .navbar a.active {
+    border-bottom: 2px solid #111; /* Highlight active page */
+  }
+  
+  /* Content Wrapper */
+  .content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  /* Resume Section */
+.resume h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .resume-section {
+    position: relative; /* For the vertical line */
+    padding-left: 10%; /* Add padding for the vertical line */
+  }
+  
+  .resume-section::before {
+    content: '';
+    position: absolute;
+    left: 10%; /* Position the vertical line */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Thickness of the line */
+    background-color: #ddd; /* Line color */
+  }
+  
+  .resume-item {
+    display: flex; /* Align date and experience side by side */
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 2rem; /* Space between items */
+  }
+  
+  .resume-item .date {
+    width: 15%; /* Reserve space for the date */
+    text-align: right; /* Align date to the right */
+    font-size: .9rem;
+    color: #666; /* Subtle date color */
+  }
+  
+  .resume-item .experience {
+    margin-left: 2rem; /* Space between date and experience content */
+  }
+  
+  .resume-item h3 {
+    font-size: 1.2rem;
+  }
+  
+  .resume-item p {
+    margin-top: .5rem;
+  }
+  
