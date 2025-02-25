@@ -1,108 +1,52 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
-    color: #111;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    background-color: #fff;
-    padding: 1rem;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .navbar li {
-    margin-left: 3%;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .navbar a.active {
-    border-bottom: 2px solid #111; /* Highlight active page */
-    font-weight: bold; /* Optional bold for active link */
-  }
-  
-  /* Content Wrapper */
-  .content {
-    max-width: 1100px;
-    margin: auto;
-    padding: 2rem;
-  }
-  
-  /* Intro Section (Index Page) */
-  .intro h1 {
-    font-size: 4rem;
-    font-weight: bold;
-  }
-  
-  .intro p {
-    margin-top: 1rem;
-  }
-  
-  /* Project Preview Section (Index Page) */
-  .project-preview {
-    margin-top: 3rem;
-  }
-  
-  .project-preview h2 {
-    font-size: 1.5rem;
-  }
-  
-  .project-preview p {
-    margin-top: .5rem;
-  }
-  
-  .project-preview .btn {
-    display: inline-block;
-    margin-top: .5rem;
-    padding: .5rem .75rem;
-    background-color: #111; /* Black button */
-    color: #fff; /* White text */
-    border: none;
-    cursor: pointer;
-  }
-  
-  .project-preview .btn:hover {
-    background-color: #333; /* Darker hover effect */
-  }
-  
-  .project-preview .project-image {
-    margin-top: .75rem;
-  }
-  
-  /* Skills Section*/
-  .skills {
-    margin-top: 3rem;
-    font-size: 1.2rem; /* Slightly larger text */
-    line-height: 1.8; /* Better readability */
-    color: #fff; /* White text */
-    background-color: #000; /* Black background */
-    padding: 2rem; /* Space inside the section */
-    margin-bottom: 3rem;
-  }
-  
-  .skills p {
-    text-align: center; /* Center align the paragraph */
-  }
-  
-  .skills .highlight {
-    color: #f7c948; /* Yellow highlight for key terms */
-  }  
+/* Project Preview Section (Index Page) */
+.project-preview {
+  margin-top: 3rem;
+}
+
+.project-preview h2 {
+  font-size: 1.5rem;
+}
+
+.project-preview p {
+  margin-top: .5rem;
+}
+
+.project-preview .btn {
+  display: inline-block;
+  margin-top: .5rem;
+  padding: .5rem .75rem;
+  background-color: #111; /* Black button */
+  color: #fff; /* White text */
+  border: none;
+  cursor: pointer;
+}
+
+.project-preview .btn:hover {
+  background-color: #333; /* Darker hover effect */
+}
+
+.project-preview .project-image {
+  margin-top: .75rem;
+}
+
+/* Skills Section*/
+.skills {
+  margin-top: 3rem;
+  font-size: 1.2rem; /* Slightly larger text */
+  line-height: 1.8; /* Better readability */
+  color: #fff; /* White text */
+  background-color: #000; /* Black background */
+  padding: 2rem; /* Space inside the section */
+  margin-bottom: 3rem;
+}
+
+.skills p {
+  text-align: center; /* Center align the paragraph */
+}
+
+.skills .highlight {
+  color: #f7c948; /* Yellow highlight for key terms */
+}  
 
 /* Projects Section */
 .projects {
