@@ -42,11 +42,6 @@
   }
   
   /* Resume Section */
-.resume h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
   .resume-section {
     position: relative; /* For the vertical line */
     padding-left: 10%; /* Add padding for the vertical line */
@@ -55,7 +50,7 @@
   .resume-section::before {
     content: '';
     position: absolute;
-    left: 10%; /* Position the vertical line */
+    left: 8%; /* Position the vertical line */
     top: 0;
     bottom: 0;
     width: 2px; /* Thickness of the line */
