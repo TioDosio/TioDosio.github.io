@@ -3,6 +3,33 @@
 	padding: 0;
 }
 
+/* Navbar Styles */
+.navbar {
+	background-color: #222;
+	padding: 1rem;
+	margin-right: 15%;
+	}
+	
+	.navbar ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	}
+	
+	.navbar li {
+	margin-left: 3%;
+	}
+	
+	.navbar a {
+	text-decoration: none;
+	color: #fff;
+	}
+	
+	.navbar a.active {
+	border-bottom: 2px solid #fff; /* Highlight active page */
+	font-weight: bold; /* Optional bold for active link */
+	}
+
 body {
 	background: #222;
 	font-family: Georgia, serif;
@@ -42,8 +69,8 @@ h1,h2,h4,h5,h6 {
 }
 
 	#timeline {
-		width: 500px;
-		height: 600px;
+		width: 600px;
+		height: 700px;
 		overflow: hidden;
 		margin: 40px auto;
 		position: relative;
