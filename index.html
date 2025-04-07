@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andre Teodosio</title>
+  <title>André Teodósio | Personal Portfolio</title>
   <link rel="stylesheet" href="general.css">
   <link rel="stylesheet" href="index/index.css">
+  <link rel="stylesheet" href="index/animations.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="mobile-nav.css">
+  <link rel="stylesheet" href="static-version.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="description" content="André Teodósio - Electrical and Computer Engineering professional specializing in Control Robotics and AI">
+  <!-- Add class for no-js fallbacks -->
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 </head>
 <body>
   <header class="navbar">
-    <nav>
+    <nav class="container">
       <ul>
         <li><a href="index.html" class="active">About</a></li>
         <li><a href="resume/resume.html">Resume</a></li>
@@ -19,41 +26,180 @@
       </ul>
     </nav>
   </header>
-  <main class="content">
-    <section class="intro">
-      <h1>ANDRÉ <br> TEODÓSIO</h1>
-      <p>This space is a reflection of my journeys so stay tuned as I share projects, insights, 
-        and experiments that showcase my growth and creativity!</p>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1>ANDRÉ <br> TEODÓSIO</h1>
+        <p>Electrical and Computer Engineering professional specializing in Control Robotics and AI. This space is a reflection of my journey, showcasing projects, insights, and experiments that highlight my growth and creativity.</p>
+        <div class="hero-buttons">
+          <a href="projects/projects.html" class="btn">View Projects</a>
+          <a href="resume/resume.html" class="btn btn-outline">My Resume</a>
+        </div>
+      </div>
     </section>
 
-    <section class="project-preview">
-      <h2>Comming soon...</h2>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-      </p>
+    <section class="about section-alt" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>I'm a Master's student in Electrical and Computer Engineering with a focus on Control Robotics and AI at Instituto Superior Técnico. My academic journey has equipped me with a strong foundation in programming, machine learning, and robotics.</p>
+            <p>With experience in teaching programming and robotics to young students, I've developed a passion for making complex technical concepts accessible and engaging. My recent internship at MavenPet allowed me to apply my machine learning skills to real-world problems in feature engineering.</p>
+            <p>I'm currently working on my Master's thesis in Social Robotics while continuously expanding my technical skills through platforms like TryHackMe and personal projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-projects section" id="featured-projects">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-card-image">
+              <div style="background-color: #7192be; height: 100%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-camera" style="font-size: 3rem; color: white;"></i>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3>Images Recognition</h3>
+              <div class="project-card-tags">
+                <span class="project-card-tag">Python</span>
+                <span class="project-card-tag">Machine Learning</span>
+                <span class="project-card-tag">Computer Vision</span>
+              </div>
+              <p>A project that identifies faces in images and classifies them into three categories: people wearing masks correctly, people without masks, and people wearing masks incorrectly.</p>
+              <a href="https://github.com/TioDosio/Image-and-Speech-Recognition-Project" target="_blank" class="btn">View on GitHub</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-card-image">
+              <div style="background-color: #8db596; height: 100%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-microphone" style="font-size: 3rem; color: white;"></i>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3>Security Speech Recognition</h3>
+              <div class="project-card-tags">
+                <span class="project-card-tag">Machine Learning</span>
+                <span class="project-card-tag">Python</span>
+                <span class="project-card-tag">Audio Processing</span>
+              </div>
+              <p>A project that utilizes a speech recognition model to identify the speaker and verify a keyword for access authentication.</p>
+              <a href="https://github.com/ariannapierini/Audio-signal-analysis-and-speech-recognition-PROJECT" target="_blank" class="btn">View on GitHub</a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-card-image">
+              <div style="background-color: #1a2a3a; height: 100%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-robot" style="font-size: 3rem; color: white;"></i>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3>Robotic Project</h3>
+              <div class="project-card-tags">
+                <span class="project-card-tag">Python</span>
+                <span class="project-card-tag">Robotics</span>
+                <span class="project-card-tag">Computer Vision</span>
+              </div>
+              <p>A script that translates PlayStation controller signals into commands for two robotic arms, each with five degrees of freedom, with a live video feed interface.</p>
+              <a href="https://github.com/TioDosio/Robotica" target="_blank" class="btn">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="view-all-projects">
+          <a href="projects/projects.html" class="btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>SQL</li>
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Machine Learning</h3>
+            <ul>
+              <li>Computer Vision</li>
+              <li>Speech Recognition</li>
+              <li>Classification</li>
+              <li>Regression</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Robotics</h3>
+            <ul>
+              <li>Robot Control</li>
+              <li>Sensor Integration</li>
+              <li>Interface Design</li>
+            </ul>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Tools & Frameworks</h3>
+            <ul>
+              <li>TensorFlow</li>
+              <li>PyTorch</li>
+              <li>Git</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section-alt" id="contact">
+      <div class="container">
+        <h2>Let's Connect</h2>
+        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <a href="mailto:andrefteo@example.com" class="btn">Get In Touch</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="contact-info">
+    <div class="contact-info container">
       <p>Connect with me:</p>
       <ul>
-        <li><a href="https://www.linkedin.com/in/andré-teodósio-81a05b283" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn</a>
+        <li>
+          <a href="https://www.linkedin.com/in/andré-teodósio-81a05b283" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
         </li>
-        <li><a href="https://github.com/TioDosio" target="_blank">
-          <i class="fab fa-github"></i> GitHub</a>
+        <li>
+          <a href="https://github.com/TioDosio" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
         </li>
-        <li><a href="mailto:andrefteo@example.com">
-          <i class="fas fa-envelope"></i> Email</a>
+        <li>
+          <a href="mailto:andrefteo@example.com">
+            <i class="fas fa-envelope"></i> Email
+          </a>
         </li>
       </ul>
+      <p class="copyright">&copy; 2025 André Teodósio. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- JavaScript is optional for the static version -->
   <script src="index.js"></script>
+  <script src="mobile-nav.js"></script>
 </body>
 </html>

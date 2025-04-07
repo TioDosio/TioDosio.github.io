@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - Andre Teodosio</title>
+  <title>Projects - André Teodósio</title>
   <link rel="stylesheet" href="../general.css">
-  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="../projects/projects.css">
+  <link rel="stylesheet" href="../projects/animations.css">
+  <link rel="stylesheet" href="../responsive.css">
+  <link rel="stylesheet" href="../mobile-nav.css">
+  <link rel="stylesheet" href="../static-version.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="description" content="Explore André Teodósio's projects in machine learning, computer vision, robotics, and more.">
+  <!-- Add class for no-js fallbacks -->
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
 </head>
 <body>
   <header class="navbar">
-    <nav>
+    <nav class="container">
       <ul>
         <li><a href="../index.html">About</a></li>
         <li><a href="../resume/resume.html">Resume</a></li>
@@ -20,88 +27,176 @@
     </nav>
   </header>
 
-  <main class="content">
-    <!-- Skills Section -->
-    <h1>PROJECTS GALLERY</h1>
-    <section class="skills">
-      <p>
-        <span class="skill-tag" data-tag="SQL">SQL</span>
-        <span class="skill-tag" data-tag="HTML5">HTML5</span> 
-        <span class="skill-tag" data-tag="Python">Python</span> 
-        <span class="skill-tag" data-tag="CSS">CSS</span>
-        <span class="skill-tag" data-tag="Java">Java</span>
-        <span class="skill-tag" data-tag="C">C</span>
-        <span class="skill-tag" data-tag="Computer Vision">Computer Vision</span> 
-        <br>
-        <span class="skill-tag" data-tag="JavaScript">JavaScript</span>
-        <span class="skill-tag" data-tag="OOP">OOP</span>
-        <span class="skill-tag" data-tag="Robotics">Robotics</span>
-        <span class="skill-tag" data-tag="Machine Learning">Machine Learning</span>
-      </p>
-    </section>
+  <main>
+    <div class="container">
+      <section class="projects-header">
+        <h1>PROJECTS GALLERY</h1>
+        <p>Browse through my portfolio of projects spanning various technologies and domains.</p>
+      </section>
 
-    <!-- Projects Section -->
-    <section class="projects">
-      <div class="card" data-tags="Python, Machine Learning, Computer Vision">
-        <h3>Images Recognition</h3>
+      <!-- Skills Filter Section - Hidden in static version -->
+      <section class="skills">
         <p>
-          The main goal of this project is to identify faces in images and classify them into three categories: 
-          people wearing masks correctly, people without masks, and people wearing masks incorrectly.
+          <span class="skill-tag" data-tag="SQL">SQL</span>
+          <span class="skill-tag" data-tag="HTML5">HTML5</span> 
+          <span class="skill-tag" data-tag="Python">Python</span> 
+          <span class="skill-tag" data-tag="CSS">CSS</span>
+          <span class="skill-tag" data-tag="Java">Java</span>
+          <span class="skill-tag" data-tag="C">C</span>
+          <span class="skill-tag" data-tag="Computer Vision">Computer Vision</span> 
+          <span class="skill-tag" data-tag="JavaScript">JavaScript</span>
+          <span class="skill-tag" data-tag="OOP">OOP</span>
+          <span class="skill-tag" data-tag="Robotics">Robotics</span>
+          <span class="skill-tag" data-tag="Machine Learning">Machine Learning</span>
         </p>
-        <a href="https://github.com/TioDosio/Image-and-Speech-Recognition-Project" target="_blank" class="btn">View on GitHub</a>
-      </div>
+      </section>
 
-      <div class="card" data-tags="Machine Learning, Python">
-        <h3>Security Speech Recognition</h3>
-        <p>
-          A project that utilizes a speech recognition model to identify the speaker and verify a keyword for access authentication.
-        </p>
-        <a href="https://github.com/ariannapierini/Audio-signal-analysis-and-speech-recognition-PROJECT" target="_blank" class="btn">View on GitHub</a>
-      </div>
+      <!-- Projects Section -->
+      <section class="projects">
+        <div class="card" data-tags="Python, Machine Learning, Computer Vision">
+          <div class="card-image">
+            <!-- Placeholder for project image -->
+            <div style="background-color: #7192be; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-camera" style="font-size: 3rem; color: white;"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Images Recognition</h3>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Machine Learning</span>
+              <span class="card-tag">Computer Vision</span>
+            </div>
+            <p>
+              The main goal of this project is to identify faces in images and classify them into three categories: 
+              people wearing masks correctly, people without masks, and people wearing masks incorrectly.
+            </p>
+            <a href="https://github.com/TioDosio/Image-and-Speech-Recognition-Project" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
 
-      <div class="card" data-tags="Python, Robotics">
-        <h3>Robotic Project</h3>
-        <p>
-          A script that translates PlayStation controller signals into commands for two robotic arms, each with five 
-          degrees of freedom. Additionally, an interface displays a live video feed from one arm's camera, allowing 
-          precise control to carefully cut gelatin with a knife attached to the other arm.
-        </p>
-        <a href="https://github.com/TioDosio/Robotica" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="card" data-tags="Machine Learning, Python">
+          <div class="card-image">
+            <!-- Placeholder for project image -->
+            <div style="background-color: #8db596; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-microphone" style="font-size: 3rem; color: white;"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Security Speech Recognition</h3>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Machine Learning</span>
+              <span class="card-tag">Audio Processing</span>
+            </div>
+            <p>
+              A project that utilizes a speech recognition model to identify the speaker and verify a keyword for access authentication.
+            </p>
+            <a href="https://github.com/ariannapierini/Audio-signal-analysis-and-speech-recognition-PROJECT" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
 
-      <div class="card" data-tags="Java, OOP">
-        <h3>Travelling Salesman Problem</h3>
-        <p>
-          A project that solves the Travelling Salesman Problem using an object-oriented approach, where artificial ants 
-          explore paths with a random factor, deposit pheromones along their routes, and collectively converge on the optimal 
-          solution over time.
-        </p>
-        <a href="https://github.com/ErreEne/POO-project" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="card" data-tags="Python, Robotics">
+          <div class="card-image">
+            <!-- Placeholder for project image -->
+            <div style="background-color: #1a2a3a; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-robot" style="font-size: 3rem; color: white;"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Robotic Project</h3>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Robotics</span>
+              <span class="card-tag">Hardware Control</span>
+            </div>
+            <p>
+              A script that translates PlayStation controller signals into commands for two robotic arms, each with five 
+              degrees of freedom. Additionally, an interface displays a live video feed from one arm's camera, allowing 
+              precise control to carefully cut gelatin with a knife attached to the other arm.
+            </p>
+            <a href="https://github.com/TioDosio/Robotica" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
 
-      <div class="card" data-tags="C">
-        <h3>Online Lizard Game</h3>
-        <p>
-          Similar to the classic Snake game, this online multiplayer game features lizards that must eat cockroaches to gain 
-          points while avoiding collisions with other lizards.
-        </p>
-        <a href="https://github.com/TioDosio/PSis" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="card" data-tags="Java, OOP">
+          <div class="card-image">
+            <!-- Placeholder for project image -->
+            <div style="background-color: #7192be; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-route" style="font-size: 3rem; color: white;"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Travelling Salesman Problem</h3>
+            <div class="card-tags">
+              <span class="card-tag">Java</span>
+              <span class="card-tag">OOP</span>
+              <span class="card-tag">Algorithms</span>
+            </div>
+            <p>
+              A project that solves the Travelling Salesman Problem using an object-oriented approach, where artificial ants 
+              explore paths with a random factor, deposit pheromones along their routes, and collectively converge on the optimal 
+              solution over time.
+            </p>
+            <a href="https://github.com/ErreEne/POO-project" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
 
-      <div class="card" data-tags="Python, Machine Learning">
-        <h3>Machine Learning Exercises</h3>
-        <p>
-          A collection of exercises that explore machine learning concepts, such as regression, 
-          and classification.
-        </p>
-        <a href="https://github.com/TioDosio/ML-LAB" target="_blank" class="btn">View on GitHub</a>
-      </div>
+        <div class="card" data-tags="C">
+          <div class="card-image">
+            <!-- Placeholder for project image -->
+            <div style="background-color: #8db596; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-gamepad" style="font-size: 3rem; color: white;"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Online Lizard Game</h3>
+            <div class="card-tags">
+              <span class="card-tag">C</span>
+              <span class="card-tag">Networking</span>
+              <span class="card-tag">Game Development</span>
+            </div>
+            <p>
+              Similar to the classic Snake game, this online multiplayer game features lizards that must eat cockroaches to gain 
+              points while avoiding collisions with other lizards.
+            </p>
+            <a href="https://github.com/TioDosio/PSis" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
 
-    </section>
+        <div class="card" data-tags="Python, Machine Learning">
+          <div class="card-image">
+            <!-- Placeholder for project image -->
+            <div style="background-color: #1a2a3a; height: 100%; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-brain" style="font-size: 3rem; color: white;"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Machine Learning Exercises</h3>
+            <div class="card-tags">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">Machine Learning</span>
+              <span class="card-tag">Data Analysis</span>
+            </div>
+            <p>
+              A collection of exercises that explore machine learning concepts, such as regression, 
+              and classification.
+            </p>
+            <a href="https://github.com/TioDosio/ML-LAB" target="_blank" class="btn">View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- No Results Message - Hidden in static version -->
+        <div class="no-results">
+          <h3>No projects match your selected filters</h3>
+          <p>Try selecting different skill tags or clear your filters to see all projects.</p>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <div class="contact-info">
+    <div class="contact-info container">
       <p>Connect with me:</p>
       <ul>
         <li><a href="https://www.linkedin.com/in/andré-teodósio-81a05b283" target="_blank">
@@ -114,10 +209,12 @@
           <i class="fas fa-envelope"></i> Email</a>
         </li>
       </ul>
+      <p class="copyright">&copy; 2025 André Teodósio. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Include JavaScript -->
-  <script src="projects.js"></script>
+  <!-- JavaScript is optional for the static version -->
+  <script src="../projects/projects.js"></script>
+  <script src="../mobile-nav.js"></script>
 </body>
 </html>

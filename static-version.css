@@ -1,0 +1,89 @@
+/* 
+ * Static Version CSS for TioDosio.github.io
+ * Ensures functionality without JavaScript
+ */
+
+/* Show regular navigation on all screen sizes for static version */
+.no-js .navbar ul {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Hide mobile navigation elements in static version */
+  .no-js .mobile-nav-container,
+  .no-js .mobile-nav-toggle,
+  .no-js .mobile-nav,
+  .no-js .mobile-nav-overlay {
+    display: none !important;
+  }
+  
+  /* Ensure all animations are in their final state for static version */
+  .no-js .fade-in-section {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: none !important;
+  }
+  
+  /* Set skill progress bars to full width for static version */
+  .no-js .skill-progress {
+    width: var(--progress-width) !important;
+    transition: none !important;
+  }
+  
+  /* Hide elements that require JavaScript in static version */
+  .no-js .newsletter-form {
+    display: none !important;
+  }
+  
+  /* Show noscript alternatives in static version */
+  .no-js noscript {
+    display: block !important;
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md);
+    background-color: var(--color-background-alt);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Ensure all projects are visible in static version */
+  .no-js .card {
+    display: block !important;
+  }
+  
+  /* Hide filtering UI in static version */
+  .no-js .skills {
+    display: none !important;
+  }
+  
+  /* Show static message for filtering in static version */
+  .no-js .projects::before {
+    content: "All projects are displayed below. Enable JavaScript for filtering functionality.";
+    display: block;
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background-color: var(--color-background-alt);
+    border-radius: 4px;
+    text-align: center;
+    font-style: italic;
+    color: var(--color-text-light);
+  }
+  
+  /* Hide no results message in static version */
+  .no-js .no-results {
+    display: none !important;
+  }
+  
+  /* Ensure timeline animations are in final state for static version */
+  .no-js .timeline::after {
+    animation: none !important;
+  }
+  
+  /* Ensure hover states are visible in static version */
+  .no-js .btn::after,
+  .no-js .content:hover,
+  .no-js .education-card:hover,
+  .no-js .bts-entry:hover::before {
+    transition: none !important;
+  }
+  

@@ -1,0 +1,228 @@
+/* 
+ * Responsive Design Improvements for TioDosio.github.io
+ * Enhanced mobile and tablet experience
+ */
+
+/* Base responsive adjustments */
+@media (max-width: 1200px) {
+    :root {
+      --container-width: 90%;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (max-width: 992px) {
+    /* Typography adjustments */
+    h1 {
+      font-size: 3rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    h3 {
+      font-size: 1.35rem;
+    }
+    
+    body {
+      font-size: 1rem;
+    }
+    
+    /* Layout adjustments */
+    .section {
+      padding: var(--spacing-lg) 0;
+    }
+    
+    /* Navbar adjustments */
+    .navbar {
+      padding: var(--spacing-sm);
+    }
+    
+    /* Hero section adjustments */
+    .hero {
+      min-height: 60vh;
+    }
+    
+    .hero-buttons {
+      flex-direction: row;
+      gap: var(--spacing-sm);
+    }
+    
+    /* Projects grid adjustments */
+    .projects-grid, 
+    .projects {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--spacing-md);
+    }
+    
+    /* Skills section adjustments */
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    /* Typography adjustments */
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+    }
+    
+    /* Layout adjustments */
+    .section {
+      padding: var(--spacing-md) 0;
+    }
+    
+    .container {
+      padding: 0 var(--spacing-sm);
+    }
+    
+    /* Navbar adjustments */
+    .navbar ul {
+      justify-content: center;
+    }
+    
+    /* Hero section adjustments */
+    .hero {
+      min-height: auto;
+      padding: var(--spacing-xl) 0;
+      text-align: center;
+    }
+    
+    .hero p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+    
+    /* Projects grid adjustments */
+    .projects-grid, 
+    .projects {
+      grid-template-columns: 1fr;
+    }
+    
+    /* Skills section adjustments */
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    /* Footer adjustments */
+    footer .contact-info ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    footer .contact-info ul li {
+      margin: var(--spacing-xs) 0;
+    }
+  }
+  
+  /* Small mobile styles */
+  @media (max-width: 480px) {
+    /* Typography adjustments */
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    /* Hero section adjustments */
+    .hero-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    .hero-buttons .btn {
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Card adjustments */
+    .card,
+    .project-card,
+    .education-card {
+      margin-bottom: var(--spacing-md);
+    }
+    
+    /* Timeline adjustments for resume page */
+    .timeline::after {
+      left: 20px;
+    }
+    
+    .container {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 10px;
+    }
+    
+    .right {
+      left: 0%;
+    }
+    
+    .container::after {
+      left: 10px;
+    }
+  }
+  
+  /* Print styles */
+  @media print {
+    .navbar, 
+    footer, 
+    .btn,
+    .newsletter,
+    .coming-soon {
+      display: none;
+    }
+    
+    body {
+      font-size: 12pt;
+      line-height: 1.5;
+      color: #000;
+      background: #fff;
+    }
+    
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      page-break-after: avoid;
+      page-break-inside: avoid;
+    }
+    
+    img {
+      max-width: 100% !important;
+      page-break-inside: avoid;
+    }
+    
+    .content {
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .timeline::after {
+      display: none;
+    }
+    
+    .container::after,
+    .container::before {
+      display: none;
+    }
+  }
+  
